@@ -56,22 +56,22 @@ function PassGen() {
     setTimeout(() => {
       setIsSelected(false);
       setBtnValue("Copy");
-    }, 1000);
+    }, 600);
   };
 
   return (
     <>
-      <div className=" px-20 h-120 my-40 rounded-2xl flex flex-col justify-center bg-blue-100 max-w-200 mx-auto min-w-200 shadow-2xl border">
+      <div className=" px-20 h-100 my-20 rounded-2xl flex flex-col justify-center bg-blue-100 max-w-200 mx-auto min-w-200 shadow-2xl border">
         <div className=" flex flex-col w-full">
           <h1 className="text-4xl text-center mb-8 font-serif font-bold">
             Password Generator
           </h1>
 
-          <div className="grid grid-cols-2 w-full">
+          <div className="grid grid-cols-2  w-full">
             <div className="">
-              <div className="w-100 ">
+              <div className="w-100">
                 <h1
-                  className={`p-2 m-2 w-75 ${
+                  className={`p-2 m-2 w-75 text-center shadow-xl  rounded-md ${
                     isSelected
                       ? "text-blue-500 bg-gray-200"
                       : "text-black bg-white"
@@ -81,7 +81,7 @@ function PassGen() {
                 </h1>
                 <button
                   onClick={selectPassword}
-                  className="bg-blue-500 m-2 p-2 w-75 hover:bg-blue-600 text-white"
+                  className="bg-blue-500 m-2 p-2 w-75 rounded-md shadow-xl hover:bg-blue-600 text-white"
                 >
                   {btnValue}
                 </button>
